@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #ffcc33, #ff6699, #3366ff);
+    background-size: 300% 300%;
+    animation: gradientBG 6s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 18px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+input {
+    padding: 12px;
+    width: 85%;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #ffcc00;
+    color: black;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    transition: 0.3s;
+    width: 90%;
+}
+
+button:hover {
+    background: #ff9933;
+    transform: scale(1.05);
+}
+
+#pokemonPic {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    #pokemonPic {
+        width: 70%;
+    }
+}
